@@ -5,11 +5,9 @@ import 'package:provider/provider.dart';
 import 'package:timbu_shop/providers/favourite_provider.dart';
 import 'package:timbu_shop/providers/product_list_provider.dart';
 import 'package:timbu_shop/screens/product_detail/product_detail.dart';
-import 'package:timbu_shop/screens/product_detail/product_detail_view.dart';
-import 'package:timbu_shop/screens/product_list/product_listing_screen.dart';
 
 Future<void> main() async {
-  await dotenv.load();
+  await dotenv.load(fileName: '.env');
   runApp(const MyApp());
 }
 
